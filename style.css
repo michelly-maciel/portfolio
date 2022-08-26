@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root {
+  --gray: rgb(231, 231, 231);
+  --gray-plus: rgb(189, 189, 189);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+body {
+  font-family: Roboto, 'Sans-serif';
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+nav img {
+  max-width: 1.8em;
+  max-height: 1.8em;
+  margin-right: 5%;
+}
+
+.nav-buttons {
+  display: flex;
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-left: 5%;
+}
+
+.nav-buttons a{
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+  margin-right: 10%;
+}
+
+.nav-buttons a:hover {
+  text-decoration: underline;
+}
+
+.nav-buttons p{
+  margin-right: 10%;
+}
+
+.content-sobre {
+  background-color: var(--gray);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.foto-perfil {
+  width: 450px;
+  height: 450px;
+  margin: 5%;
+  background-image: url(images/foto-portfolio-exp.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  transition: width 1s, height 1s;
+}
+
+.foto-perfil:hover {
+  width: 500px;
+  height: 500px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-top: 5%;
+}
+
+#nome-portfolio {
+  margin-top: 1%;
+}
+
+#titulo {
+  margin-bottom: 2%;
+}
+
+.trabalhos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4%;
+  margin-top: 2%;
+  transition: margin-top 1s;
+}
+
+.trabalhos:hover {
+  margin-top: 4%;
+}
+
+#trabalhos {
+  margin-bottom: 2%;
+}
+
+.grid-trabalhos {
+  display: flex;
+}
+
+.logo {
+  width: 700px;
+  height: 700px;
+  margin-right: 0.5%;
+  box-shadow: 1px 1px 2px black;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 700px;
+  margin-left: 0.5%;
+}
+
+.top-left {
+  display: flex;
+}
+
+.mock1 {
+  width: 350px;
+  height: 350px;
+}
+
+.mock2 {
+  width: 700px;
+  height: 350px;
+  margin-top: 2%;
+}
+
+.first {
+  margin-right: 2%;
+}
+
+.redbone .logo {
+  background: url(images/red.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.redbone .first {
+  background: url(images/cartao.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.redbone .last {
+  background: url(images/etiquetas.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.redbone .mock2 {
+  background: url(images/sacolas.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cont-redbone {
+  display: flex;
+  margin-top: 1%;
+  margin-left: 0.9%;
+}
+
+.mock-cont {
+  margin-right: 1%;
+  width: 472px;
+  height: 472px;
+}
+
+.mock3 {
+  background: url(images/redbone-cartaz.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mock4 {
+  background: url(images/redbone-camisa.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mock5 {
+  background: url(images/redbone-quadro.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cont-unijoias {
+  display: flex;
+  margin-top: 1%;
+  margin-left: 0.9%;
+}
+
+.cont-unijoias .mock3 {
+  background: url(images/unijoias-alt2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cont-unijoias .mock4 {
+  background: url(images/unijoias-alt3.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cont-unijoias .mock5 {
+  background: url(images/unijoias-alt.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.unijoias .logo {
+  background: url(images/logo-joias.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.unijoias .first {
+  background: url(images/placa.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.unijoias .last {
+  background: url(images/caixinha.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.unijoias .mock2 {
+  background: url(images/joias-caixa.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.unijoias {
+  margin-top: 1%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray-plus);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.infos-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
+
+footer h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.6%;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 1440px) {
+  .logo {
+    width: 490px;
+    height: 490px;
+  }
+
+  .left-side {
+    width: 490px;
+    height: 490px;
+  }
+
+  .mock1 {
+    width: 245px;
+    height: 245px;
+  }
+
+  .mock2 {
+    width: 490px;
+    height: 245px;
+  }
+
+  .mock-cont {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 1152px) {
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  .logo {
+    width: 392px;
+    height: 392px;
+  }
+
+  .left-side {
+    width: 392px;
+    height: 392px;
+  }
+
+  .mock1 {
+    width: 196px;
+    height: 196px;
+  }
+
+  .mock2 {
+    width: 392px;
+    height: 196px;
+  }
+
+  .mock-cont {
+    width: 264px;
+    height: 264px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .logo {
+    width: 343px;
+    height: 343px;
+  }
+
+  .left-side {
+    width: 343px;
+    height: 343px;
+  }
+
+  .mock1 {
+    width: 171.5px;
+    height: 171.5px;
+  }
+
+  .mock2 {
+    width: 343px;
+    height: 171.5px;
+  }
+
+  .mock-cont {
+    width: 235px;
+    height: 235px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.75em;
+  }
+
+  .nav-buttons a {
+    font-size: 0.75em;
+  }
+
+  nav img {
+    width: 1.1em;
+    height: 1.1em;
+  }
+
+  .foto-perfil {
+    width: 200px;
+    height: 200px;
+  }
+
+  .foto-perfil:hover {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content-sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infos {
+    width: 100%;
+    align-items: center;
+  }
+
+  .trabalhos {
+    margin-top: 6%;
+  }
+
+  .trabalhos:hover {
+    margin-top: 8%;
+  }
+
+  .infos p {
+    text-align: center;
+  }
+
+  #detalhe {
+    margin-bottom: 4%;
+  }
+
+  #titulo {
+    text-align: center;
+  }
+
+  .fotos-trabalhos img {
+    max-width: 300px;
+    max-width: 300px;
+    margin-bottom: 5%;
+  }
+
+  .unijoias .mock2 {
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .grid-trabalhos {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 225px;
+    height: 225px;
+  }
+
+  .left-side {
+    margin-top: 4%;
+    width: 225px;
+    height: 225px;
+  }
+
+  .mock1 {
+    width: 112px;
+    height: 112px;
+  }
+
+  .mock2 {
+    width: 225px;
+    height: 112px;
+  }
+
+  .cont-redbone {
+    flex-direction: column;
+  }
+
+  .cont-unijoias {
+    flex-direction: column;
+  }
+}

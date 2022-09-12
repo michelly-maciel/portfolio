@@ -124,17 +124,59 @@ nav img {
 }
 
 .logo {
-  width: 700px;
-  height: 700px;
+  width: 430px;
+  height: 430px;
   margin-right: 0.5%;
   box-shadow: 1px 1px 2px black;
+}
+
+.grid-coca {
+  display: flex;
+}
+
+.flyer {
+  background: url(images/coca-flyer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 0.5%;
+  width: 350px;
+  height: 700px;
+}
+
+.grid-coca .left-side {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  height: 700px;
+}
+
+.mock-coca {
+  width: 520px;
+  height: 350px;
+}
+
+.c1 {
+  height: 400px;
+  background: url(images/coca-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c2 {
+  margin-top: 2%;
+  background: url(images/coca-capa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .left-side {
   display: flex;
   flex-direction: column;
-  width: 700px;
-  height: 700px;
+  width: 430px;
+  height: 430px;
   margin-left: 0.5%;
 }
 
@@ -143,13 +185,13 @@ nav img {
 }
 
 .mock1 {
-  width: 350px;
-  height: 350px;
+  width: 215px;
+  height: 215px;
 }
 
 .mock2 {
-  width: 700px;
-  height: 350px;
+  width: 430px;
+  height: 215px;
   margin-top: 2%;
 }
 
@@ -157,89 +199,33 @@ nav img {
   margin-right: 2%;
 }
 
-.redbone .logo {
-  background: url(images/red.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.redbone .first {
-  background: url(images/cartao.png);
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-.redbone .last {
-  background: url(images/etiquetas.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.redbone .mock2 {
-  background: url(images/sacolas.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .cont-redbone {
   display: flex;
   margin-top: 1%;
-  margin-left: 0.9%;
 }
 
 .mock-cont {
   margin-right: 1%;
-  width: 472px;
-  height: 472px;
+  width: 290px;
+  height: 290px;
 }
 
 .mock3 {
-  background: url(images/redbone-cartaz.jpeg);
+  background: url(images/logo-red.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .mock4 {
-  background: url(images/redbone-camisa.jpeg);
+  background: url(images/mock-redbone.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
 .mock5 {
-  background: url(images/redbone-quadro.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.cont-unijoias {
-  display: flex;
-  margin-top: 1%;
-  margin-left: 0.9%;
-}
-
-.cont-unijoias .mock3 {
-  background: url(images/unijoias-alt2.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.cont-unijoias .mock4 {
-  background: url(images/unijoias-alt3.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.cont-unijoias .mock5 {
-  background: url(images/unijoias-alt.jpeg);
+  background: url(images/mock2-redbone.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -269,7 +255,7 @@ nav img {
 .unijoias .mock2 {
   background: url(images/joias-caixa.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
@@ -302,6 +288,27 @@ footer p {
 }
 
 @media (max-width: 1440px) {
+
+  .grid-coca {
+    margin-left: 0;
+  }
+
+  .flyer {
+    margin-left: 0;
+    width: 400px;
+    height: 700px;
+  }
+
+  .c1 {
+    width: 580px;
+    height: 420px;
+  }
+
+  .c2 {
+    width: 580px;
+    height: 300px;
+  }
+
   .logo {
     width: 490px;
     height: 490px;
@@ -331,7 +338,11 @@ footer p {
 @media (max-width: 1152px) {
   
   h1 {
-    font-size: 2.5em;
+    font-size: 2em;
+  }
+
+  p {
+    margin-right: 3%;
   }
   
   .logo {
@@ -361,6 +372,25 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+  .grid-coca {
+    margin-left: 22%;
+  }
+
+  .flyer {
+    width: 342px;
+    height: 632px;
+  }
+
+  .c1 {
+    width: 342px;
+    height: 395px;
+  }
+
+  .c2 {
+    width: 342px;
+    height: 228px;
+  }
 
   .logo {
     width: 343px;
@@ -459,6 +489,32 @@ footer p {
 
   .grid-trabalhos {
     flex-direction: column;
+  }
+
+  .grid-coca {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-coca .left-side {
+    align-items: center;
+    height: auto;
+  }
+
+  .flyer {
+    width: 225px;
+    height: 340px;
+  }
+
+  .c1 {
+    width: 225px;
+    height: 260px;
+  }
+
+  .c2 {
+    width: 225px;
+    height: 150px;
   }
 
   .logo {
